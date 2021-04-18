@@ -29,11 +29,11 @@ struct LoadingScreenView: View {
         .opacity(endSplash ? 0 : 1)
     }
     func animateSplash(){
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
-            withAnimation(Animation.easeOut(duration: 0.55)){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.45) {
+            withAnimation(Animation.easeOut(duration: 0.75)){
                 animate.toggle()
             }
-            withAnimation(Animation.easeOut(duration: 0.55)){
+            withAnimation(Animation.easeOut(duration: 0.75)){
                 endSplash.toggle()
             }
         }
